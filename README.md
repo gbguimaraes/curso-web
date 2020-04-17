@@ -1,5 +1,7 @@
 # javascripts
 
+#GitHub commands
+
 git status - verificar o espelhamento dos arquivos da máquina com os do repositório
 
 git add . - adicionar os arquivos alterados na fila
