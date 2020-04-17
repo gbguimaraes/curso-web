@@ -9,3 +9,4 @@ git add . - adicionar os arquivos alterados na fila
 git commit -m "nome" - solicitação de envio para o repositório
 
 git push - enviar os arquivos para o repositório
+
