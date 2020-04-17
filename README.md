@@ -1,4 +1,4 @@
-# javascript
+# javascripts
 
 git status - verificar o espelhamento dos arquivos da máquina com os do repositório
 
