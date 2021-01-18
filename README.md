@@ -1,4 +1,4 @@
-# javascripts
+# curso-web
 
 #GitHub commands
 
