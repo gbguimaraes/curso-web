@@ -1,0 +1,85 @@
+Task description
+A entrega
+Finalmente chegamos na entrega. Ela consiste de 5 etapas descritas a seguir. Todo o código deve ser escrito no arquivo index.js dentro do diretório src. Não será necessário nenhum outro arquivo.
+
+O Explorador
+Nesse código, nós vamos contar a história de um Explorador em busca da chave para abrir seu baú do tesouro. Você deverá criar todas as funções corretamente para que ele alcance o destino final.
+
+Passo 1 - Declaração de Variáveis.
+Precisamos começar definindo os valores usados de base para nossa aventura:
+
+Instancie uma variável do tipo "CONST" chamada EXPLORADOR, recebendo como valor o seu nome.
+Instancie uma variável do tipo "LET" chamada bolsaDeItens, recebendo como valor um Array vázio.
+Instancie uma variável do tipo "LET" chamada moedas, recebendo 0 como valor.
+Instancie uma variável do tipo "LET" chamada energia, recebendo 5 como valor.
+Instancie uma variável do tipo "LET" chamada recompensas, recebendo como valor um array com os seguintes itens:
+Chave;
+Duck, o Pato de Borracha;
+Moeda;
+Moeda;
+Moeda;
+Moeda;
+Moeda.
+Passo 2 - A Taverna
+Durante nossas viagens, nosso explorador precisará de algum lugar para descansar:
+
+Crie uma função chamada taverna:
+Essa função NÃO recebe parâmetros:
+Use um console.log() para dizer que o Explorador entrou na Taverna;
+SE a energia for menor que 5:
+Faça um loop para recuperar a energia do explorador até o máximo (5);
+Use um console.log() para dizer que o Explorador está descansando;
+Ao fim do loop use um console.log() para dizer que o Explorador está revitalizado.
+Passo 3 - A recompensa
+Depois de uma exploração, precisamos entregar uma recompensa para que o explorador não desanime de suas buscas:
+
+Crie uma função chamada pegarItem
+Esta função receberá como parâmetro uma variável do tipo string chamada item;
+SE o parâmetro for igual a "Moeda":
+Use um console.log() para dizer que o Explorador ganhou uma moeda;
+a função deve somar a variável moeda em 1;
+SENÃO:
+Use um console.log() para dizer que o Explorador ganhou um item;
+Ela deve adicionar o item na variável bolsaDeItens.
+Passo 4 - A Exploração
+A vida de um explorador é repleta de perigos, enquanto ele viaja pode acabar encontrando inimigos pelo caminho:
+
+Crie uma função chamada batalha:
+
+Essa função NÃO recebe parâmetros:
+Use um console.log() para dizer que o Explorador encontrou um monstro;
+SE a energia for menor que 1:
+Use um console.log() para dizer que o Explorador fugiu para a Taverna;
+A função deve retornar false;
+SENÃO:
+Use um console.log() para dizer que o Explorador derrotou o monstro;
+Reduza a energia em 1 e retorne true:
+SE depois da redução a energia do Explorador chegar a 0:
+Use um console.log() para dizer que o Explorador fugiu para a Taverna;
+Retorne false;
+Crie uma função chamada explorar:
+
+Essa função NÃO recebe parâmetros:
+Use um console.log() para dizer que o Explorador saiu para explorar;
+SE a energia for menor que 1:
+Use um console.log() para dizer que o Explorador não pode explorar;
+Chame a função taverna;
+Retorne false;
+SENÃO:
+Chame a função batalha;
+SE o retorno de batalha for true:
+Chame roletarRecompensas;
+Essa função já é fornecida no código carregado, basta fazer sua chamada.
+
+Retorne true;
+SENÃO chame a função taverna;
+Retorne false;
+Passo 5 - Fim da jornada
+Finalmente chegamos no fim de nossa jornada... ou será que não?
+
+Criar uma função chamada abrirBau
+SE houver uma "Chave" no array Bolsa de Itens:
+Use um console.log() com a mensagem "Parabéns, você finalmente abriu o baú, é perigoso lá fora, leve seu certificado!"
+Deverá retornar true;
+SENÃO:
+Retorne false;
